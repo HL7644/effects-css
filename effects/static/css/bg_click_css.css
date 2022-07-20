@@ -1,0 +1,47 @@
+#bg_click_container1
+{
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: silver;
+}
+
+#bg_click_box1
+{
+    border-radius: 25%;
+    width: 10%;
+    height: 10%;
+    background-color: black;
+}
+
+
+@keyframes move-the-box
+{
+    0%
+    {
+        transform: translateX(0) translateY(0);
+    }
+    25%
+    {
+        transform: translateY(900%);
+    }
+    50%
+    {
+        transform: translateX(900%) translateY(900%);
+    }
+    75%
+    {
+        transform: translateX(900%);
+    }
+    100%
+    {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes rotate-symbol
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}

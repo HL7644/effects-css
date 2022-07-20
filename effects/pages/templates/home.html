@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="container m-3" id="base_container">
+        <div class="row">
+            <div class="col-10 col-md-8">
+                <h4>This is a website to show various interactive effects</h4>
+                <p>Refer to table below for menu description</p>
+                <p>To Access: click on the navbar above</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Menu</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Background</th>
+                            <td>Effects when clicking the background of a page</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">On Click</th>
+                            <td>Effects when clicking designated buttons</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Drag</th>
+                            <td>Effects when dragging</td>
+                        </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@keyframes cw-rotation
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes ccw-rotation
+{
+    100%
+    {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes show
+{
+    0%
+    {
+        transform: scale(0);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+
+@keyframes hide
+{
+    0%
+    {
+        transform: scale(0);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}

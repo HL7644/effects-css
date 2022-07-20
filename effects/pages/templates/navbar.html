@@ -1,0 +1,33 @@
+<div class="navbar navbar-expand-md bg-light m-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" href='/'>Effect Display</a>
+        <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+            <ul class="navbar-nav">
+                {% if request.user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link me-2" href='/'>Mail</a>
+                </li>
+                {%else%}
+                <li class="nav-item">
+                    <a class="nav-link me-2" href='/'>Home</a>
+                </li>
+                {%endif%}
+                <li class="nav-item">
+                    <a class="nav-link me-2" href='/about/'>About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link me-2" href='/bg_click/'>Background</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link me-2" href='/btn_click/'>On Click</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link me-2" href='/drag/'>Drag</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
